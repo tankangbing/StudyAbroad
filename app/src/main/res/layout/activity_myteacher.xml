@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="55dp"
+    	    android:background="@color/colorPrimary"
+    	    android:gravity="center_vertical" >
+
+		<Button
+			android:id="@+id/button2"
+			android:onClick="ordertabBack"
+			android:text="返回"
+			style="@style/back_btn" />
+		<Button
+			android:id="@+id/button1"
+			android:onClick="ordertabBack"
+			style="@style/app_button" />
+    	    <TextView
+    	        android:id="@+id/msgbartitle"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_centerHorizontal="true"
+    	        android:layout_centerVertical="true"
+    	        android:gravity="center"
+    	        android:textAppearance="?android:attr/textAppearanceLarge"
+    	        style="@style/app_tar" />
+
+    	</RelativeLayout>
+	<ExpandableListView
+		android:id="@id/android:list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+</LinearLayout>

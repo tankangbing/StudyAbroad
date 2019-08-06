@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/pic_login_bg">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+	    android:src="@drawable/pic_login_title"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_white_pressedban" >
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            android:textStyle="bold"
+            android:textSize="70px"
+            android:textColor="@color/colorbrack"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="30dp"/>
+        <com.app.studyabroad.learnactivity.view.AutoEditTextView
+            android:id="@+id/login_user_edit"
+            android:layout_width="match_parent"
+            style="@style/app_login_exittext_layout"
+            android:layout_below="@+id/login_tv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorbrack_6"
+            app:leftText="用户账号"
+            app:leftTextColor="@color/colorbrack_6"
+            android:textSize="36px"
+            >
+
+        </com.app.studyabroad.learnactivity.view.AutoEditTextView>
+        <com.app.studyabroad.learnactivity.view.AutoEditTextView
+            android:id="@+id/login_passwd_edit"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/login_user_edit"
+            style="@style/app_login_exittext_layout"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:password="true"
+            android:singleLine="true"
+            android:drawableRight="@drawable/icon_login_eye0"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorbrack_6"
+            app:leftText="账号密码"
+            android:textSize="36px"
+             />
+        <TextView
+            android:id="@+id/forget_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_passwd_edit"
+            android:layout_alignRight="@+id/login_passwd_edit"
+            android:layout_marginBottom="20dp"
+            android:onClick="forget"
+            android:clickable="true"
+            android:text="忘记密码？"
+            style="@style/app_copyright"
+            android:textColor="#209ada" />
+
+    </RelativeLayout>
+    <CheckBox
+        android:id="@+id/rememberPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:text="记住密码"
+        style="@style/checkbox2"
+        android:textSize="36px"
+        android:padding="10dp"
+        android:textColor="#209ada" />
+    <Button
+        android:id="@+id/login_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/rememberPsw"
+        android:layout_alignParentRight="true"
+        style="@style/app_login_exittext_layout"
+        android:background="@drawable/button_iogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="login"
+        android:textColor="#ffffff" />
+</RelativeLayout>

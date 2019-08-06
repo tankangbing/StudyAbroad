@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/table_frame_style"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+             >
+
+            <ImageView
+                android:id="@+id/play_detail_info_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/praise_style" />
+
+            <TextView
+                android:id="@+id/play_detail_praiseNum"
+                android:layout_width="33dp"
+                android:textColor="#666"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/app_copyright"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/play_detail_info_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/step_style" />
+
+            <TextView
+                android:id="@+id/play_detail_stepNum"
+                android:layout_width="33dp"
+                android:textColor="#666"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                 style="@style/app_copyright"
+                android:text="0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            >
+            	<TextView
+	                android:id="@+id/play_detail_name"
+	                android:padding="15sp"
+	                android:layout_margin="5dp"
+	                android:textColor="#666"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                 style="@style/app_copyright"
+	                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#dddddd"
+            android:layout_height="0.01sp"
+            android:orientation="vertical" />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            	<TextView
+	                android:id="@+id/play_detail_nodename"
+	                android:padding="15sp"
+	                android:layout_margin="5dp"
+	                android:textColor="#666"
+	                 style="@style/app_copyright"
+	 				android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#dddddd"
+            android:layout_height="0.01sp"
+            android:orientation="vertical" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            	 <TextView
+	                android:id="@+id/play_detail_conntent"
+	                android:layout_width="wrap_content"
+	                android:padding="15sp"
+	                android:layout_margin="5dp"
+	                android:textColor="#666"
+	                style="@style/app_copyright"
+	                android:layout_height="wrap_content"
+	                android:text="视频暂无描述！" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#dddddd"
+            android:layout_height="0.01sp"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

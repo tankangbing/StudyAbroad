@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textGroup"
+        android:layout_width="match_parent"
+        android:layout_height="44sp"
+        android:text="班级名称：网络课程"
+        android:textColor="@color/colorbrack"
+        android:background="@color/colorCheck_item"
+        android:paddingLeft="27sp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        style="@style/app_main_student"/>
+
+</LinearLayout>

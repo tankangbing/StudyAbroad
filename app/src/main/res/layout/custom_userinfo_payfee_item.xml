@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+     >
+
+    <TextView
+        android:id="@+id/payfee_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textColor="#000"
+        style="@style/app_tar"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/payfee_txt1"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:background="@drawable/border_buttom"
+         >
+
+        <TextView
+            android:id="@+id/payfee_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            style="@style/app_copyright"
+            android:layout_marginLeft="10dp"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/payfee_txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            style="@style/app_copyright"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/payfee_txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            style="@style/app_copyright"
+            android:layout_marginRight="10dp"
+            android:textColor="#808080"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d8ae7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBj">#ffffff</color>
+    <color name="colorScut_new_logo">#1b9fd8</color>
+    <color name="colorCheck_title">#ff9a02</color>
+    <color name="colorRed_three">#ffcc02</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorCheck_item">#f1f1f1</color>
+    <color name="colorCheck">#979797</color>
+    <color name="colorbrack_6">#676767</color>
+    <color name="colorRed">#f40707</color>
+    <color name="colorRed_ban">#ff6702</color>
+    <color name="colorRed_fe">#fe8402</color>
+    <color name="colorbrack">#000</color>
+    <color name="colorbrack_b">#181818</color>
+    <color name="colorbrack_t">#4e4d4d</color>
+    <color name="colorAchieve">#35d6ff</color>
+    <color name="colorye">#e4ebf4</color>
+    <color name="gray_light">#98eaff</color>
+    <color name="gray_dark">#cccccc</color>
+    <color name="gray_half">#C9C9C9</color>
+    <color name="blue_normal">#b3ffb3</color>
+    <color name="red_light">#b3b3ff</color>
+    <color name="green_normal">#b3e1e1</color>
+    <color name="gray_onehalf">#f3f6fb</color>
+    <color name="gray_twohalf">#e4ebf4</color>
+    <!-- 分割线颜色-->
+    <color name="divider_color">#C9C9C9</color>
+    <color name="transparent">#00000000</color>
+    <!-- 辅助色 -->
+    <color name="color_999999">#999999</color>
+</resources>

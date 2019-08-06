@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBj"
+    android:orientation="vertical" >
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:text="@string/app_name"
+		style="@style/app_main_title"
+		android:background="@color/colorPrimary"
+		android:gravity="center"
+		android:textColor="#fff"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+	<RelativeLayout
+		android:id="@+id/student"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@color/colorRed_three"
+        android:padding="5dp"
+		style="@style/app_main_title"
+		android:visibility="gone"
+		>
+		<TextView
+			android:id="@+id/main_student_tv"
+            android:padding="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="当前学生：张三"
+			android:textColor="@color/colorbrack_6"
+			android:layout_marginLeft="5dp"
+			style="@style/app_main_student"/>
+		<Button
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+			android:id="@+id/main_qh_btn"
+			android:onClick="qiehuan"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:text="切换"
+			android:background="@drawable/student_selector"
+			android:textColor="@color/colorWhite"
+			style="@style/app_main_student"/>
+	</RelativeLayout>
+    <GridView android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:listSelector="#00000000"
+		android:horizontalSpacing="20dp"
+		android:verticalSpacing="20dp"
+		android:background="@drawable/table_frame_style"
+		android:padding="30dp"
+        />
+	<GridView android:id="@+id/gridview2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:numColumns="2"
+		android:listSelector="#00000000"
+		android:horizontalSpacing="20dp"
+		android:verticalSpacing="20dp"
+		android:background="@drawable/table_frame_style"
+		android:padding="30dp"
+		android:visibility="gone"
+		/>
+    <!--<TextView-->
+        <!--android:id="@+id/textView1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:textColor="#000"-->
+        <!--style="@style/app_copyright"-->
+        <!--android:text="@string/app_copyright" />-->
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eee"
+        android:orientation="vertical" >
+        
+         <RelativeLayout
+        android:id="@+id/userinfomationUTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_back"
+            android:text="返回"
+            android:onClick="userinfomationUBack"
+            android:textColor="#fff"
+            style="@style/app_copyright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改密码"
+            android:textColor="#ffffff"
+            style="@style/app_tar"/>
+
+    </RelativeLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+
+		    <EditText
+		        android:id="@+id/userinfomationUOldPsw"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="5dp"
+		        android:background="@drawable/login_editbox"
+		        android:password="true"
+		        android:ems="10"
+		        android:hint="旧密码"
+		        android:singleLine="false"
+		        android:textColor="#000"
+		        android:textCursorDrawable="@null"
+		        style="@style/app_copyright" />
+
+		    <EditText
+		        android:id="@+id/userinfomationUNewPsw"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="5dp"
+		        android:password="true"
+		        android:background="@drawable/login_editbox"
+		        android:ems="10"
+		        android:hint="新密码"
+		        android:singleLine="false"
+		        android:textColor="#000"
+		        android:textCursorDrawable="@null"
+		        style="@style/app_copyright" />
+
+		    <EditText
+		        android:id="@+id/userinfomationUAgNewPsw"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="5dp"
+		        android:password="true"
+		        android:background="@drawable/login_editbox"
+		        android:ems="10"
+		        android:hint="确认新密码"
+		        android:singleLine="false"
+		        android:textColor="#000"
+		        android:textCursorDrawable="@null"
+		        style="@style/app_copyright" >
+
+		        <requestFocus />
+		    </EditText>
+
+		    <Button
+		        android:id="@+id/userinfomationSubmit"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="8dp"
+		        android:layout_marginRight="8dp"
+		        android:layout_marginTop="5dp"
+		        android:background="@drawable/btn_style_green"
+		        android:gravity="center"
+		        android:padding="2dp"
+		        android:text=" 提交 "
+		        android:onClick="userinfomationSubmit"
+		        android:textColor="#fff"
+		        style="@style/app_copyright" />
+
+		</LinearLayout>
+
+</LinearLayout>

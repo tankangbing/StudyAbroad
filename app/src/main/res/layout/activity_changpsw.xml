@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="55dp"
+		android:background="@color/colorPrimary"
+		android:gravity="center_vertical" >
+
+		<Button
+			android:id="@+id/button2"
+			android:onClick="ordertabBack"
+			android:text="返回"
+			style="@style/back_btn" />
+		<Button
+			android:id="@+id/button1"
+			android:onClick="ordertabBack"
+			style="@style/app_button" />
+		<TextView
+			android:id="@+id/msgbartitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			style="@style/app_tar" />
+
+	</RelativeLayout>
+	<EditText
+		android:id="@+id/cpsw_newpsw_edit"
+		android:layout_width="match_parent"
+		style="@style/app_login_exittext_layout"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="60dp"
+		android:background="@drawable/login_editbox"
+		android:ems="10"
+		android:hint="请输入新的密码"
+		android:textColorHint="@color/colorCheck"
+		android:password="true"
+		android:singleLine="true"
+		android:textColor="#000"
+/>
+	<EditText
+		android:id="@+id/cpsw_newpsw_edit2"
+		android:layout_width="match_parent"
+		style="@style/app_login_exittext_layout"
+		android:layout_marginBottom="20dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="20dp"
+		android:background="@drawable/login_editbox"
+		android:ems="10"
+		android:hint="请再次输入新的密码"
+		android:textColorHint="@color/colorCheck"
+		android:password="true"
+		android:singleLine="true"
+		android:textColor="#000"
+		/>
+	<Button
+		android:id="@+id/forget_next_btn"
+		android:layout_width="match_parent"
+		android:layout_below="@+id/login_passwd_edit"
+		style="@style/app_login_exittext_layout"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:background="@drawable/student_selector"
+		android:onClick="next"
+		android:text="确定"
+		android:textColor="#ffffff" />
+</LinearLayout>

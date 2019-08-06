@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mm_listitem_none"
+    android:id="@+id/videolayout"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/videoTar"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#e0000000"
+            android:gravity="center_vertical"
+             >
+
+            <Button
+                android:id="@+id/st"
+                style="@style/app_copyright"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/title_btn_back"
+                android:onClick="msgdetailBack"
+                android:text="返回"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/msgbartitle"
+                style="@style/app_tar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/st"
+                android:layout_alignBottom="@+id/st"
+                android:layout_centerHorizontal="true"
+                android:text="视频播放"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <!--<com.app.studyabroad.adapter.FullScreenVideoView-->
+            <!--android:id="@+id/my_video"-->
+            <!--style="@style/app_vedio_layout_height"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_margin="1dp" />-->
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </LinearLayout>
+
+</LinearLayout>

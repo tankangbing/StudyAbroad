@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#f1f1f1"
+    android:orientation="vertical" >
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="55dp"
+		android:background="@color/colorPrimary">
+
+		<Button
+			android:id="@+id/button2"
+			android:onClick="ordertabBack"
+			android:text="返回"
+			style="@style/back_btn" />
+		<Button
+			android:id="@+id/button1"
+			android:onClick="ordertabBack"
+			style="@style/app_button" />
+		<TextView
+			android:id="@+id/msgbartitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			style="@style/app_tar" />
+
+	</RelativeLayout>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="197dp"
+	android:background="#f1f1f1"
+    android:gravity="center"
+    android:orientation="vertical"
+	>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/pic_portrait001"/>
+	<TextView
+		android:id="@+id/xinxi_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+
+		android:textSize="48px"
+		android:textColor="@color/colorbrack_6"/>
+</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@color/colorWhite">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="45dp"
+			>
+			<TextView
+				android:layout_width="0dp"
+				android:layout_weight="2"
+				android:layout_height="45dp"
+				android:text="学号"
+				android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+			<TextView
+				android:id="@+id/xinxi_stuNo"
+				android:layout_width="0dp"
+				android:layout_weight="7"
+				android:layout_height="45dp"
+				android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+		</LinearLayout>
+		<TextView style="@style/lin" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="45dp"
+                android:text="性别"
+				android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+            <TextView
+				android:id="@+id/xinxi_gender"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="45dp"
+
+                android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+        </LinearLayout>
+        <TextView style="@style/lin" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="45dp"
+                android:text="身份证"
+				android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+            <TextView
+				android:id="@+id/xinxi_idcard"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="45dp"
+
+                android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+        </LinearLayout>
+        <TextView style="@style/lin" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="45dp"
+                android:text="年级"
+				android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+            <TextView
+				android:id="@+id/xinxi_grade"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="45dp"
+
+                android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+        </LinearLayout>
+        <TextView style="@style/lin" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="45dp"
+                android:text="专业"
+				android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+            <TextView
+				android:id="@+id/xinxi_major"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="45dp"
+
+                android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+        </LinearLayout>
+        <TextView style="@style/lin" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="45dp"
+                android:text="层次"
+				android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+            <TextView
+				android:id="@+id/xinxi_classic"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorbrack"
+                android:textSize="36px"/>
+        </LinearLayout>
+        <TextView style="@style/lin" />
+	</LinearLayout>
+
+</LinearLayout>

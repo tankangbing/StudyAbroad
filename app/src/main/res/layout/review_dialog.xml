@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/review_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            android:textColor="#333"
+            android:id="@+id/review_title"
+            style="@style/app_tar"
+            android:text="发表评论" />
+
+        <EditText
+            android:id="@+id/review_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_editbox"
+            android:ems="10"
+            android:hint="请理性发表您的意见，谢谢！(100字以内)"
+            android:singleLine="false"
+            android:textCursorDrawable="@null"
+            android:textColor="#000"
+             style="@style/app_copyright" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="8dp"
+             >
+            
+            <Button
+              android:id="@+id/review_fb"
+              android:layout_width="110dp"
+              android:layout_height="wrap_content"
+              android:text="发表"
+              android:textSize="16sp"
+              android:textColor="#fff"
+              android:background="@drawable/btn_style_green"
+              android:gravity="center"
+			  android:onClick="reviewbuttonYes"
+              />
+            
+            <Button
+              android:id="@+id/review_qx"
+              android:layout_width="110dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="取消"
+              android:textSize="16sp"
+              android:textColor="#333"
+              android:background="@drawable/btn_style_white"
+              android:gravity="center"
+			  android:onClick="reviewbuttonNo"
+              />
+        </LinearLayout>
+
+    </LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/alertmsgMain"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/confirm_dialog_bg2" >
+
+    <TextView
+        android:id="@+id/alertmsgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="温馨提示"
+        style="@style/app_tar"
+        android:textColor="#333" />
+
+    <TextView
+        android:id="@+id/alertmsgContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text=""
+        style="@style/app_copyright"
+        android:textColor="#333"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/alertmsgSure"
+            android:layout_marginTop="10dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:onClick="alertmsgSure"
+            android:text="是"
+            android:textColor="#fff"
+            android:visibility="visible"
+            style="@style/app_copyright" />
+
+        <Button
+            android:id="@+id/alertmsgCancel"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_style_white"
+            android:gravity="center"
+            android:visibility="visible"
+            android:onClick="alertmsgCancel"
+            android:text="否"
+            android:textColor="#333"
+            android:layout_marginTop="10dp"
+            style="@style/app_copyright" />
+    </LinearLayout>
+
+</LinearLayout>

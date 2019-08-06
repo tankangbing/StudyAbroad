@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content" 
+    android:id="@+id/play_stop_video_but"   
+    android:orientation="horizontal"
+     >  
+<!-- 显示、隐藏的扩展容器 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/app_video_image_nofull"
+                android:src="@drawable/play_video" />
+
+        </LinearLayout>
+
+</LinearLayout>  

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/exit_layout"
+        style="@style/app_exit_layout"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/confirm_dialog_bg2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            android:textColor="#333"
+            style="@style/app_tar"
+            android:id="@+id/exit_title"
+            android:text="退出在线学习平台" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:layout_marginTop="1dp"
+            android:padding="10dp"
+            style="@style/app_copyright"
+            android:id="@+id/exitcontent"
+            android:gravity="center_horizontal"
+            android:text="退出后，你将收不到新的消\n息.确定要退出？" /> 
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="8dp"
+             >
+            
+            <Button
+              android:id="@+id/exitBtn0"
+              style="@style/app_exit_bnt_layout"
+              android:layout_height="wrap_content"
+              android:text="是"
+              android:textColor="#fff"
+              android:background="@drawable/btn_style_green"
+              android:gravity="center"
+			  android:onClick="exitBtnOk"
+              />
+            
+            <Button
+              android:id="@+id/exitBtn1"
+              style="@style/app_exit_bnt_layout"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="否"
+              android:textColor="#333"
+              android:background="@drawable/btn_style_white"
+              android:gravity="center"
+			  android:onClick="exitBtnNo"
+              />
+        </LinearLayout>
+
+    </LinearLayout>

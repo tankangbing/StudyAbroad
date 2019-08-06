@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/st"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/title_btn_back"
+            android:onClick="msgdetailBack"
+            android:text="返回"
+            android:textColor="#fff"
+            style="@style/app_copyright" />
+
+        <TextView
+            android:id="@+id/msgbartitle"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/st"
+            android:layout_alignBottom="@+id/st"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:maxLines="1"
+            android:text=""
+            android:ellipsize="end"
+            style="@style/app_tar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/relativeLayout1"
+        android:gravity="center"
+        android:padding="26dp"
+        >
+        <RelativeLayout
+            android:id="@+id/cw_test_iv"
+            android:layout_height="170dp"
+            android:layout_width="170dp"
+            android:background="@drawable/u22"
+            android:layout_marginBottom="26dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/stlx"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:text="随堂练习"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/cw_test_total"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_below="@+id/stlx"
+                android:layout_marginTop="5dp"
+                android:text="共--题"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/cw_test_do"
+            android:layout_below="@id/cw_test_iv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textColor="@color/colorPrimary"
+            android:onClick="click"
+            android:background="@drawable/shape3"
+            android:layout_centerHorizontal="true"
+            android:text="开始做题"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:id="@+id/correct_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:text="答对数量" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/correct_num_tv"
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/correct_num"
+                android:layout_centerHorizontal="true"
+                android:textColor="#999999"
+                android:textSize="16sp"
+                android:text="0"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:id="@+id/commit_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:text="提交数量" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/commit_num_tv"
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commit_num"
+                android:layout_centerHorizontal="true"
+                android:textColor="#999999"
+                android:textSize="16sp"
+                android:text="0"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:text="作业状态" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/status_tv"
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status"
+                android:layout_centerHorizontal="true"
+                android:textColor="#999999"
+                android:textSize="16sp"
+                android:text="--"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

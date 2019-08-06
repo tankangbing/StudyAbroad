@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/st"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/title_btn_back"
+            android:onClick="msgdetailBack"
+            android:textColor="#fff"
+            android:text="返回"
+            style="@style/app_copyright" />
+
+        <TextView
+            android:id="@+id/msgbartitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/app_tar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/border_buttom" >
+
+        <TextView
+            android:id="@+id/sjqdzxf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/byzxf"
+            android:layout_alignBottom="@+id/byzxf"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/byzxf"
+            android:background="@drawable/border_buttom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#0099FF"
+            android:text="实际取得总学分："
+            style="@style/app_copyright" />
+
+        <TextView
+            android:id="@+id/sjqdbxxf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bybxxf"
+            android:layout_alignBottom="@+id/bybxxf"
+            android:layout_alignLeft="@+id/sjqdzxf"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_buttom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="实际取得必修学分："
+            android:textColor="#0099FF"
+            style="@style/app_copyright" />
+
+        <TextView
+            android:id="@+id/bxksm"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bybxxf"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_buttom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="必修数目："
+            android:textColor="#0099FF"
+            style="@style/app_score_layout" />
+
+        <TextView
+            android:id="@+id/yxbxksm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bxksm"
+            android:layout_alignBottom="@+id/bxksm"
+            android:layout_alignLeft="@+id/sjqdbxxf"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_buttom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="已修必修课数目："
+            android:textColor="#0099FF"
+            style="@style/app_copyright" />
+
+        <TextView
+            android:id="@+id/byzxf"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_buttom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="毕业总学分："
+            android:textColor="#0099FF"
+            style="@style/app_score_layout" />
+
+        <TextView
+            android:id="@+id/bybxxf"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/byzxf"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_buttom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="毕业必修学分："
+            android:textColor="#0099FF"
+            style="@style/app_score_layout" />
+
+        <TextView
+            android:id="@+id/bylwsqzdxf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/yxbxksm"
+            android:layout_below="@+id/bxksm"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="毕业论文申请最低学分："
+            android:textColor="#0099FF"
+            style="@style/app_copyright" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/reflush_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="180dp" >
+
+        <ListView
+            android:id="@+id/userinf_examlist"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_margin="10dp"
+            android:divider="#00000000"
+            android:dividerHeight="0dip" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#0099FF"
+        android:layout_below="@+id/relativeLayout2"
+        android:textColor="#fff"
+        style="@style/app_copyright"
+        android:padding="1dp"
+        android:text="我的历史成绩"
+        android:gravity="center" />
+
+</RelativeLayout>

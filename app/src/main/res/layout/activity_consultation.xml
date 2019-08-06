@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+		android:id="@+id/title"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="56dp"
+    	    android:background="@color/colorPrimary"
+    	    android:gravity="center_vertical" >
+
+		<Button
+			android:id="@+id/button2"
+			android:onClick="ordertabBack"
+			android:text="返回"
+			style="@style/back_btn" />
+		<Button
+			android:id="@+id/button1"
+			android:onClick="ordertabBack"
+			style="@style/app_button" />
+    	    <TextView
+    	        android:id="@+id/msgbartitle"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_centerHorizontal="true"
+    	        android:layout_centerVertical="true"
+    	        android:gravity="center"
+    	        android:textAppearance="?android:attr/textAppearanceLarge"
+    	        style="@style/app_tar" />
+
+    	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:layout_height="0dp"
+		android:orientation="vertical">
+		<LinearLayout
+		android:id="@+id/consulation_layout"
+		android:layout_width="match_parent"
+		android:layout_height="56dp"
+		android:orientation="horizontal"
+		android:background="@color/colorWhite"
+		>
+	    <TextView
+            android:background="@color/colorWhite"
+		    android:id="@+id/activity_check_three_tv"
+		    android:text="咨询类型"
+		    android:layout_width="0dp"
+		    android:layout_weight="3"
+		    android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:paddingLeft="17dp"
+            android:textColor="@color/colorbrack_b"
+
+			style="@style/app_main_student"
+		/>
+		<TextView
+			android:background="@drawable/shape_select_pressed"
+			android:id="@+id/consulation_kaoshi_tv"
+			android:text="考试"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="5"
+            android:textColor="@color/colorbrack_b"
+			android:layout_marginLeft="8dp"
+			android:clickable="true"
+			android:padding="10dp"
+			android:layout_gravity="center"
+			style="@style/app_main_student"
+
+            />
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"/>
+	</LinearLayout>
+        <EditText
+			android:id="@+id/consulation_quetion_et"
+            style="@style/app_student_sef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+			android:hint="请输入内容"
+			android:gravity="top"
+			android:background="@drawable/bg_edittext_focused"
+            android:textColor="@color/colorbrack_b" />
+	</LinearLayout>
+	<LinearLayout
+		android:background="@drawable/bg_edittext_focused"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:layout_height="0dp"
+		android:orientation="vertical">
+		<LinearLayout
+            android:id="@+id/consulation_layout_tc"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:background="@color/colorWhite"
+			android:orientation="horizontal">
+			<TextView
+				android:background="@color/colorWhite"
+				android:text="指导老师"
+				android:layout_width="0dp"
+				android:layout_weight="3"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorbrack_b"
+				android:layout_gravity="center"
+				android:paddingLeft="17dp"
+				style="@style/app_main_student"
+				/>
+			<TextView
+				android:id="@+id/consulation_teacher_tv"
+				android:background="@drawable/shape_select_pressed"
+				android:text="全体老师"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="5"
+				android:textColor="@color/colorbrack_b"
+				android:layout_marginLeft="8dp"
+				android:padding="10dp"
+				android:layout_gravity="center"
+				android:clickable="true"
+				style="@style/app_main_student"
+				/>
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"/>
+		</LinearLayout>
+		<Button
+			android:id="@+id/consulation_tijiao_btn"
+			android:layout_width="200dp"
+			android:layout_height="56dp"
+			android:textColor="@color/colorWhite"
+			android:background="@drawable/studen_item_selector"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dp"
+			android:onClick="tijiao"
+			android:text="提交"
+			style="@style/app_main_student"
+			/>
+	</LinearLayout>
+</LinearLayout>

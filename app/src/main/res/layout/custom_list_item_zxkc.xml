@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mm_listitem" >
+
+    <TextView
+        android:id="@+id/zxkc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        style="@style/app_copyright" />
+
+    <TextView
+        android:id="@+id/zxkc_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/zxkc_title"
+        android:textColor="#000"
+        style="@style/app_copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/zxkc_xq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zxkc_title"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#808080"
+        style="@style/app_copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <Button
+        android:id="@+id/zxkc_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在线课程"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/zxkc_status"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/zxkc_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="随堂练习"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:background="#e18946"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/zxkc_bt1"/>
+
+</RelativeLayout>

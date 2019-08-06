@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/border_buttom"
+     >
+
+    <TextView
+        android:id="@+id/score_txt1"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        style="@style/app_score_item"        
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/score_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/score_txt1"
+        android:layout_alignBottom="@+id/score_txt1"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        style="@style/app_copyright"   
+        android:layout_toRightOf="@+id/score_txt1"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/score_txt3"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_txt2"
+        android:layout_toLeftOf="@+id/score_txt2"
+        android:padding="10dp"   
+        style="@style/app_score_item"        
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/score_txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/score_txt3"
+        android:layout_alignBottom="@+id/score_txt3"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/score_txt3"
+        android:padding="10dp"
+        style="@style/app_copyright"   
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/score_txt5"
+        style="@style/app_score_item"   
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_txt3"
+        android:layout_toLeftOf="@+id/score_txt4"
+        android:padding="10dp"        
+        android:textColor="#000" />
+
+    <TextView
+        style="@style/app_score_item"   
+        android:id="@+id/score_txt7"
+        android:layout_height="wrap_content"       
+        android:layout_below="@+id/score_txt5"
+        android:layout_toLeftOf="@+id/score_txt4"
+        android:padding="10dp"
+        android:textColor="#000" />
+
+    <TextView
+        style="@style/app_copyright"   
+        android:id="@+id/score_txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/score_txt7"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/score_txt5"
+        android:padding="10dp"
+        android:textColor="#000" />
+
+    <TextView
+        style="@style/app_copyright"   
+        android:id="@+id/score_txt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/score_txt7"
+        android:layout_alignBottom="@+id/score_txt7"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/score_txt7"
+        android:padding="10dp"       
+        android:textColor="#000" />
+
+</RelativeLayout>

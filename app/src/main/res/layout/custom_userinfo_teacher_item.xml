@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_buttom" >
+
+    <TextView
+        android:id="@+id/teacher_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        style="@style/app_copyright" 
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/teacher_txt2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/teacher_txt1"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:gravity="center"
+         style="@style/app_copyright"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/teacher_txt3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/teacher_txt2"
+        android:padding="10dp"
+        android:gravity="center"
+        style="@style/app_copyright"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000" />
+
+</RelativeLayout>

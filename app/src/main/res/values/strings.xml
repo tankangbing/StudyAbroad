@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">华南理工大学出国留学</string>
+    <string name="app_copyright">2015© 广州华南教育科技发展有限公司 \n版权所有</string>
+    <string name="verify_sms_code_failed">您输入的验证信息有误，请重新输入</string>
+    <string name="input_valid_password">密码长度最少6位</string>
+    <string name="two_password_different">两次密码输入不匹配，请重新输入</string>
+    <string name="password_Success">密码修改成功</string>
+    <string name="password_Failure">密码修改出错</string>
+    <string name="msg_Empty">您有信息还没填写</string>
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+
+    <!-- 我的预约 -->
+    <!--<string name="myorder_yybylw">预约毕业论文</string>-->
+    <!--<string name="myorder_yyzhsjbg">预约综合实践报告</string>-->
+
+
+    <!-- 主页 -->
+
+    <string name="main_msg">我的课程</string>
+    <string name="main_order">我的考勤</string>
+    <string name="main_course">查看成绩</string>
+    <string name="main_studyprogress">信息互动</string>
+    <string name="main_info">我的老师</string>
+    <string name="main_setting">系统设置</string>
+    <string name="main_mssge">我的信息</string>
+
+    <!-- 我的信息 -->
+    <!--<string name="myinfo_studentinfo">我的学籍</string>-->
+    <!--<string name="myinfo_payfee">我的缴费</string>-->
+    <!--<string name="myinfo_score">我的成绩</string>-->
+    <!--<string name="myinfo_teacher">我的老师</string>-->
+    <!--<string name="myinfo_exam">我的考试安排</string>-->
+    <!--<string name="myinfo_feedback">我的反馈</string>-->
+
+    <!-- 我的设置 -->
+    <string name="mysetting_updatepsw">修改密码</string>
+    <string name="mysetting_exit">退出登录</string>
+    <string name="mysetting_sysupdate">检查版本</string>
+
+</resources>

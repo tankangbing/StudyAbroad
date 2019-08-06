@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+     >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/title_btn_back"
+            android:onClick="msgdetailBack"
+            android:textColor="#fff"
+            android:text="返回"
+            style="@style/app_copyright" />
+
+        <TextView
+            android:id="@+id/msgcontent_bartitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:text="课程公告"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/app_tar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@drawable/border_rectangle" >
+
+        <TextView
+            android:id="@+id/msg_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/msg_detail_time"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_toRightOf="@+id/msg_detail_img"
+            android:ellipsize="none"
+            android:layout_marginLeft="10dp"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/app_tar"/>
+
+        <ImageView
+            android:id="@+id/msg_detail_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/msg_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/msg_detail_title"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="20dp"
+            style="@style/app_copyright"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#808080" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout2" >
+
+        <WebView
+            android:id="@+id/msg_detail_webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/attachs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/border_rectangle"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/msg_detail_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mm_listitem"
+                android:layout_margin="10dp"
+                android:src="@drawable/downlod" />
+
+            <TextView
+                android:id="@+id/msg_detail_downtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#5CACEE"
+                style="@style/app_copyright"
+                android:text="点击下载附件"
+                 />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

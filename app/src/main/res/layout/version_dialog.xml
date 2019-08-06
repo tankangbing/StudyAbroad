@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/version_layout"
+    style="@style/app_exit_layout"
+    android:layout_height="250dp"
+    android:background="@drawable/confirm_dialog_bg2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/exit_title"
+        style="@style/app_tar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:background="@drawable/border_buttom_gray"
+        android:padding="5dp"
+        android:text="版本更新"
+        android:textColor="#333" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="115dp" >
+
+            <TextView
+                android:id="@+id/exitcontent"
+                style="@style/app_copyright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.57"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="25dp"
+                android:paddingRight="10dp"
+                android:text="当前版本：2.0  最新版本：2.1\n(1.解决了异常账号登陆问题\n(2.加入了版本更新功能\n(3.只显示当前学期的随堂练习及课程作业"
+                android:textColor="#333" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp" >
+
+        <Button
+            android:id="@+id/exitBtn0"
+            style="@style/app_exit_bnt_layout"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:onClick="download"
+            android:text="下载"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/exitBtn1"
+            style="@style/app_exit_bnt_layout"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_style_white"
+            android:gravity="center"
+            android:onClick="nodownload"
+            android:text="暂不更新"
+            android:textColor="#333" />
+    </LinearLayout>
+
+</LinearLayout>

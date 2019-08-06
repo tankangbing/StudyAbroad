@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.studyabroad">
+
+    <!-- 访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.app.studyabroad.util.ApplicationUtil"
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:theme="@style/Anim_style2">
+        <!--欢迎-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.studyabroad.learnactivity.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <!-- 主页 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" >
+          <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <!-- 主页 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.CourseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            >
+
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+        </activity>
+        <!-- 消息块 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mymsg.MsgTabs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mymsg.MsgTabs_tab_swtz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mymsg.MsgTabs_tab_kcgg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mymsg.Msg_content"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mymsg.AttachsList"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的预约 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myorder.OrderTabs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myorder.OrderTabs_tab_yyxx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myorder.OrderTabs_tab_yyks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myorder.OrderTabs_tab_yybylw"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的课程 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mycourse.CourseTabs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mycourse.CourseTabs_tab_wxkc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mycourse.CourseTabs_tab_yxkc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mycourse.CourseTabs_tab_zxkc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mycourse.CourseTree"
+            android:screenOrientation="portrait" />
+        <!--课堂练习-->
+        <activity android:name="com.app.studyabroad.learnactivity.mycourse.CourseTestIndexActivity"></activity>
+        <activity android:name="com.app.studyabroad.learnactivity.mycourse.CourseTestActivity" />
+        <activity android:name="com.app.studyabroad.learnactivity.mycourse.CourseTestTree" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mycourse.VideoList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mycourse.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/Anim_style2" />
+        <activity android:name="com.app.studyabroad.learnactivity.mycourse.PlayDetailInfoActivity" />
+        <activity android:name="com.app.studyabroad.learnactivity.mycourse.ReviewDetailInfoActivity" />
+        <activity android:name="com.app.studyabroad.learnactivity.mycourse.PlayHistoryInfoActivity" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mycourse.ReviewActivity"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- 学习进度 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mystudyprogress.StudyProgressTabs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mystudyprogress.StudyProgressTabs_tab_kczy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mystudyprogress.StudyProgressTabs_tab_kczyitem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mystudyprogress.StudyProgressTabs_tab_stlx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mystudyprogress.StudyProgressTabs_tab_stlxitem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mystudyprogress.StudyProgressTabs_tab_wdtl"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的信息 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myinfo.UserInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myinfo.UserInfo_studentinfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myinfo.UserInfo_payfee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myinfo.UserInfo_score"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myinfo.UserInfo_teacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myinfo.UserInfo_exam"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name="com.app.studyabroad.learnactivity.myinfo.CustomizeMenu" -->
+        <!-- android:screenOrientation="portrait"/> -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.myinfo.UserInfo_feedback"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mysetting.Setting"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mysetting.SubmitingActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.mysetting.UserinfomationUActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Anim_style2" />
+
+        <!-- 其他 -->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.DebugActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.Exit"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.studyabroad.learnactivity.VersionActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/MyDialogStyle" />
+<!--我的考勤-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.CheckActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--我的成绩-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.AchieveActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--我的老师-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.MyteacherActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--信息互动-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.InformationActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--我要咨询-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.ConsultationActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--课程表-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.ClassCardActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--验证密码-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.SafeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--修改密码-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.ChangpswActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--修改旧密码-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.ChangOlepswActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--我的信息-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.XinXictivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <!--我的信息-->
+        <activity
+            android:name="com.app.studyabroad.learnactivity.study.QieHuan"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- service -->
+        <service android:name="com.app.studyabroad.service.VersionService" />
+
+
+
+    </application>
+
+</manifest>

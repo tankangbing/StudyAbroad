@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/st"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/title_btn_back"
+            android:onClick="msgdetailBack"
+            android:textColor="#fff"
+            android:text="返回"
+            style="@style/app_copyright" />
+
+        <TextView
+            android:id="@+id/msgbartitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/app_tar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stlx_score"
+        android:layout_below="@+id/stlx_score"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/stlx_table_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="5dp"
+                style="@style/app_copyright"
+                android:paddingLeft="2dp"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+		<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/reflush_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/relativeLayout1" >
+	        <ListView
+	            android:id="@+id/stlx_list"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_weight="15"
+	            android:cacheColorHint="#00000000"
+	            android:divider="#00000000"  
+				android:dividerHeight="0dip"
+	            android:listSelector="#00000000" >
+	        </ListView>
+	     </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stlx_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stlx_coursename"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        style="@style/app_copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/stlx_coursename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#0000FF"
+        style="@style/app_copyright"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/stlx_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stlx_score"
+        android:layout_alignBottom="@+id/stlx_score"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        style="@style/app_copyright"
+        android:layout_marginRight="13dp"
+        android:layout_toRightOf="@+id/stlx_coursename"
+        android:textColor="#000" />
+
+</RelativeLayout>

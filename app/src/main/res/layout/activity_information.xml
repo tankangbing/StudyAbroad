@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCheck_item"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="55dp"
+    	    android:background="@color/colorPrimary"
+    	    android:gravity="center_vertical" >
+
+		<Button
+			android:id="@+id/button2"
+			android:onClick="ordertabBack"
+			android:text="返回"
+			style="@style/back_btn" />
+		<Button
+			android:id="@+id/button1"
+			android:onClick="ordertabBack"
+			style="@style/app_button" />
+
+    	    <TextView
+    	        android:id="@+id/msgbartitle"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_centerHorizontal="true"
+    	        android:layout_centerVertical="true"
+    	        android:gravity="center"
+    	        android:textAppearance="?android:attr/textAppearanceLarge"
+    	        style="@style/app_tar" />
+        <!--<Button-->
+            <!--android:id="@+id/zx_bt2"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="@drawable/student_selector"-->
+            <!--android:padding="6dp"-->
+            <!--android:onClick="ordertabzx"-->
+            <!--android:textColor="#fff"-->
+            <!--android:text="我要咨询"-->
+            <!--style="@style/app_student_sef" />-->
+    	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="120dp">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:background="@color/colorPrimary"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:background="@drawable/shape_white_pressed"
+			android:layout_alignParentBottom="true"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp">
+			<TextView
+
+				android:id="@+id/activity_check_three_tv"
+				android:clickable="true"
+				android:text="全部"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:textColor="@color/colorPrimary"
+				android:textStyle="bold"
+				android:paddingTop="7dp"
+				android:paddingBottom="7dp"
+				style="@style/app_main_student"
+				android:drawableTop="@drawable/icon_infor_001"
+				/>
+			<TextView
+				android:id="@+id/activity_check_six_tv"
+				android:clickable="true"
+				android:text="系统通知"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:textColor="@color/colorbrack_6"
+				android:textStyle="bold"
+				android:paddingTop="7dp"
+				android:paddingBottom="7dp"
+				android:layout_marginLeft="2dp"
+				style="@style/app_main_student"
+				android:drawableTop="@drawable/icon_infor_002"
+				/>
+			<TextView
+				android:id="@+id/zx_bt2"
+				android:clickable="true"
+				android:text="我要咨询"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:textColor="@color/colorbrack_6"
+				android:textStyle="bold"
+				android:paddingTop="7dp"
+				android:paddingBottom="7dp"
+				android:layout_marginLeft="2dp"
+				style="@style/app_main_student"
+				android:drawableTop="@drawable/icon_infor_003"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<ListView android:id="@+id/check_list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:divider="#ccc"
+			android:background="@android:color/white"
+			android:dividerHeight="1dip"
+			android:layout_marginTop="5dp"
+			android:cacheColorHint="#00000000"
+			android:listSelector="#00000000"
+			/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/userinfo_studentinfo_name"
+        style="@style/app_studentinfo_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/border_rightbuttom"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/userinfo_studentinfo_content"
+        android:layout_width="wrap_content"
+        style="@style/app_studentinfo_layout_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/userinfo_studentinfo_name"
+        android:background="@drawable/border_buttom"
+        android:textColor="#000" />
+
+</RelativeLayout>

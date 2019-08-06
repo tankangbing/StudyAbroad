@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mm_listitem" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:paddingRight="2dp"
+            android:src="@android:drawable/ic_menu_slideshow" />
+
+        <TextView
+            android:id="@+id/videoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3A5FCD"
+            style="@style/app_copyright" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:gravity="right"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/praise" />
+
+        <TextView
+            android:id="@+id/videopraise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            style="@style/app_copyright"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/step" />
+
+        <TextView
+            android:id="@+id/videostep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="20dp"
+            style="@style/app_copyright"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/border_buttom"
+        android:layout_below="@+id/linearLayout2" />
+
+</RelativeLayout>
